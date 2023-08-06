@@ -22,7 +22,7 @@ rafitrisa:  NOMERIKA
 
 vina:   'marina'
     |   'diso'
-    |   rafitrisa ('<' '='? | '='? '>' ) rafitrisa
+    |   rafitrisa ('<' '='? | '>' '='? ) rafitrisa
     |   rafitrisa '=' rafitrisa
     |   '(' vina ')'
     |   vina 'na' vina
