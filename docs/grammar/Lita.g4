@@ -8,18 +8,18 @@ marika_baiko: 'BAIKO:' baiko+;
 isa_ampidirina: 'ISA AMPIDIRINA:' NOMERIKA ;
 isa_avoaka: 'ISA AVOAKA:' rafitrisa ;
 
-baiko:  'Raiso' VOAMBOLANA 'ka soloy' rafitrisa TEBOKA
-     |  'Forony' VOAMBOLANA 'ho' rafitrisa TEBOKA
-     |  'Ataovy' baiko 'raha mbola' vina TEBOKA
-     |  'tapaho' TEBOKA
-     |  '``' NL baiko (NL+ baiko)* NL '\'\''
+baiko:  'Raiso' VOAMBOLANA 'ka soloy' rafitrisa TEBOKA # Assign
+     |  'Forony' VOAMBOLANA 'ho' rafitrisa TEBOKA # Declare
+     |  'Ataovy' baiko 'raha mbola' vina TEBOKA # DoWhileStmt
+     |  'tapaho' TEBOKA # Break
+     |  '``' NL baiko (NL+ baiko)* NL '\'\'' # Placeholder
      ;
 
-rafitrisa:  NOMERIKA
-         |  VOAMBOLANA
-         | '(' rafitrisa ')'
-         | rafitrisa ( '+' | '-' ) rafitrisa
-         | rafitrisa ( '*' | '/' ) rafitrisa
+rafitrisa:  NOMERIKA # Numeric
+         |  VOAMBOLANA # Ident
+         | '(' rafitrisa ')' # Parens
+         | rafitrisa op=( '+' | '-' ) rafitrisa # AddSub
+         | rafitrisa op=( '*' | '/' ) rafitrisa # MultDiv
          ;
 
 vina:   'marina'

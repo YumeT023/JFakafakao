@@ -8,4 +8,9 @@ ISA: [0-9] ;
 TEBOKA: '.' ;
 NL: '\r'? '\n';
 
+ADD: '+' ;
+SUB: '-' ;
+MULT: '*' ;
+DIV: '/' ;
+
 WS: [ \t]+ -> skip ;
