@@ -12,7 +12,7 @@ baiko:  'Raiso' VOAMBOLANA 'ka soloy' rafitrisa TEBOKA
      |  'Forony' VOAMBOLANA 'ho' rafitrisa TEBOKA
      |  'Ataovy' baiko 'raha mbola' vina TEBOKA
      |  'tapaho' TEBOKA
-     |  '``' baiko (TEBOKA baiko)* '\'\''
+     |  '``' NL baiko (NL+ baiko)* NL '\'\''
      ;
 
 rafitrisa:  NOMERIKA
