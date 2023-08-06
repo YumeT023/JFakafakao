@@ -1,10 +1,12 @@
 grammar Lita;
 import common;
 
-programa:   'ISA AMPIDIRINA:' NOMERIKA NL+
-            'BAIKO:' NL* baiko+ NL+
-            'ISA AVOAKA:' NL* rafitrisa
+programa:   isa_ampidirina NL+ marika_baiko NL+ isa_avoaka
         ;
+
+marika_baiko: 'BAIKO:' baiko+;
+isa_ampidirina: 'ISA AMPIDIRINA:' NOMERIKA ;
+isa_avoaka: 'ISA AVOAKA:' rafitrisa ;
 
 baiko:  'Raiso' VOAMBOLANA 'ka soloy' rafitrisa TEBOKA
      |  'Forony' VOAMBOLANA 'ho' rafitrisa TEBOKA
