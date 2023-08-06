@@ -1,8 +1,6 @@
 lexer grammar common;
 
 NOMERIKA: '-'? ISA+ ;
-
-VOAMBOLANA: [a-zA-Z0-9_][a-zA-Z0-9_]* ;
 ISA: [0-9] ;
 
 TEBOKA: '.' ;
@@ -12,5 +10,14 @@ ADD: '+' ;
 SUB: '-' ;
 MULT: '*' ;
 DIV: '/' ;
+GT: '>' ;
+GTE: '>=' ;
+LT: '<' ;
+LTE: '<=' ;
+EQ: '=' ;
+NA: 'na' ;
+SY: 'sy' ;
+
+VOAMBOLANA: [a-zA-Z0-9_][a-zA-Z0-9_]* ;
 
 WS: [ \t]+ -> skip ;
