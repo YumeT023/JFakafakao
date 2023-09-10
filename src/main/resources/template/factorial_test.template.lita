@@ -1,0 +1,13 @@
+ISA AMPIDIRINA: {INPUT}
+
+BAIKO:  ``
+    Forony mpanisa ho 1.
+    Forony avoaka ho 1.
+    Ataovy ``
+        Raiso avoaka ka soloy avoaka * mpanisa.
+        Raiso mpanisa ka soloy mpanisa + 1.
+    '' raha mbola mpanisa <= LITA_ISA_NAMPIDIRINA.
+''
+
+
+ISA AVOAKA: avoaka
